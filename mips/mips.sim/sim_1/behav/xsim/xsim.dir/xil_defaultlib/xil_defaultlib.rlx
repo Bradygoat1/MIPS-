@@ -1,0 +1,19 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/fpga_labs/mips/mips.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/fpga_labs/mips/mips.srcs/sim_1/new/openmips_min_sopc_tb.v,1653027435,verilog,,,,openmips_min_sopc_tb,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/defines.v,1653045569,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/ex.v,,,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/ex.v,1653037798,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/ex_mem.v,,ex,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/ex_mem.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/id.v,,ex_mem,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/id.v,1653035790,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/id_ex.v,,id,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/id_ex.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/if_id.v,,id_ex,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/if_id.v,1653027436,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/inst_rom.v,,if_id,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/inst_rom.v,1653043499,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/mem.v,,inst_rom,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/mem.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/mem_wb.v,,mem,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/mem_wb.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/openmips.v,,mem_wb,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/openmips.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/openmips_min_sopc.v,,openmips,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/openmips_min_sopc.v,1653045266,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/pc_reg.v,,openmips_min_sopc,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/pc_reg.v,1653027435,verilog,,C:/fpga_labs/mips/mips.srcs/sources_1/new/regfile.v,,pc_reg,,,../../../../mips.srcs/sources_1/new,,,,,
+C:/fpga_labs/mips/mips.srcs/sources_1/new/regfile.v,1653041754,verilog,,C:/fpga_labs/mips/mips.srcs/sim_1/new/openmips_min_sopc_tb.v,,regfile,,,../../../../mips.srcs/sources_1/new,,,,,

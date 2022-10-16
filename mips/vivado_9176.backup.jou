@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 17 13:28:31 2022
+# Process ID: 9176
+# Current directory: C:/fpga_labs/mips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5576 C:\fpga_labs\mips\mips.xpr
+# Log file: C:/fpga_labs/mips/vivado.log
+# Journal file: C:/fpga_labs/mips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/fpga_labs/mips/mips.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+reset_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+restart
+run all
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+restart
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+restart
+run all
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+restart
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg
+source openmips_min_sopc_tb.tcl
+save_wave_config {C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1

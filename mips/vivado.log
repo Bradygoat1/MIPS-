@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 24 19:35:11 2022
+# Process ID: 19056
+# Current directory: C:/fpga_labs/mips
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21160 C:\fpga_labs\mips\mips.xpr
+# Log file: C:/fpga_labs/mips/vivado.log
+# Journal file: C:/fpga_labs/mips\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/fpga_labs/mips/mips.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/fpga_labs/mips/inst_fetch_tb_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 24 19:39:29 2022...
