@@ -14,7 +14,11 @@
 | Instruction Implemented Type   | Arithmetic, Data transfer, Logic, Conditional branch, Unconditional branch | 
 | Data forwarding                | Forwarding / Stall+forwarding |  
 
-### 2.2 各指令opcode
+### 2.2 MIPS指令格式
+
+![MIPS指令格式](https://user-images.githubusercontent.com/66453841/196083067-147c56e3-6bf8-4ea4-9ddc-be272cb9191e.jpg)
+
+### 2.3 各指令opcode
 
 | Instruction | RegDst | ALUSrc | MemtoReg | RegWrite | MemRead | MemWrite | Branch | ALUOp1 | ALUOp0 | 
 |:-----------:|:-------|:-------|:---------|:---------|:--------|:---------|:-------|:-------|:-------|
@@ -23,7 +27,7 @@
 |     sw      |    X   |   1    |     X    |     0    |    0    |     1    |    0   |   0    |    0   | 
 |     beq     |    X   |   0    |     X    |     0    |    0    |     0    |    1   |   0    |    1   | 
 
-### 2.3 MIPS資料路徑與管線化
+### 2.4 MIPS資料路徑與管線化
 ##### 此CPU擁有標準的五級管線，其運行的Datapath and Control如圖1所示，但在多指令運行時，因無管線化緣故，使在多指令運行時效率不佳，故須修改電路使其達到管線化，各Stage間新增Pipeline ，在理想運行狀態時，可同時重疊執行五個指令，使CPU在多個指令運行時效率可以提升，並運用Hazard Detection Unit抓取指令類別與其使用的暫存器類型來偵測危障類型來對症下藥，更有效的解決管線中的資料(load-use data hazard)、控制危障問題，具有危障偵測單元與前饋單元的管線路徑圖如圖2所示。
 ##### -
 
@@ -36,4 +40,6 @@
 
                                                         圖2 Overview of CPU Design
 
-###
+## 3 MIPS編譯環境的建立
+### 3.1 為了使MIPS處理機與MIPS32指令級架構兼容，故須在Ubuntu
+
