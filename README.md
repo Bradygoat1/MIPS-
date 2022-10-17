@@ -1,7 +1,8 @@
 # MIPS精簡指令集架構電腦的設計與研究
 
-## 1 Introduction
+## 1 介紹
 ##### 此專案為運用VERILOG HDL在VIVADO開發環境中實現Computer Organization and Design中的5-stage pipeline MIPS處理機，驗證MIPS處理機各指令的功能與定址法，並運用暫停和前饋方式解決多指令運行中資料相依和分支預測造成的危障問題。
+##### 以下介紹MIPS處理機的功能，設計時運用到的各指令格式與控制信號，以及此精簡指令及架構處理機使用到的硬體結構和關於MIPS編譯環境的建立。
 
 ## 2 設計
 
@@ -18,7 +19,7 @@
 
 ![MIPS指令格式](https://user-images.githubusercontent.com/66453841/196083067-147c56e3-6bf8-4ea4-9ddc-be272cb9191e.jpg)
 
-### 2.3 各指令opcode
+### 2.3 MIPS指令Control Signal
 
 | Instruction | RegDst | ALUSrc | MemtoReg | RegWrite | MemRead | MemWrite | Branch | ALUOp1 | ALUOp0 | 
 |:-----------:|:-------|:-------|:---------|:---------|:--------|:---------|:-------|:-------|:-------|
