@@ -53,3 +53,7 @@
 ### 4.1 運用Xilinx VIVADO進行多指令時，指令運行結果的觀察與驗證，驗證RTL Code在設計的過程是否正確。
 ![Waveform simulation](https://user-images.githubusercontent.com/66453841/196104979-fd1fa839-80ad-44ea-95ec-d6f7cc2d8628.png)
 
+## 5 Reference
+### [1] DAVID A. PATTERSON, JOHN L. HENNESSY, et al. COMPUTER ORGANIZATION AND DESIGN, FIFTH EDITION
+### [2] 雷思磊 自己動手寫CPU, 电子工业出版社
+### [3] 夏宇聞 VERILOG数字系统设计教程, 北京航空航天大學出版社 
