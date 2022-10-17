@@ -41,5 +41,15 @@
                                                         圖2 Overview of CPU Design
 
 ## 3 MIPS編譯環境的建立
-### 3.1 為了使MIPS處理機與MIPS32指令級架構兼容，故須在Ubuntu
+### 3.1 MIPS GNU Toolchain
+##### 為了使MIPS處理機與MIPS32指令級架構兼容，故須在Ubuntu GNU/LINUX作業系統的環境下安裝使用GNU開發工具鏈，使MIPS能實現從高階語言透過compiler、assembler、linker來得到binary文件也就是指令對應的二進制32bit指令格式，最後進行格式轉換，得到inst_rom.data文件格式，來提供給MIPS的inst_rom，進而讓處理機進行指令提取、解碼等後續階段運算與儲存。
+
+### 3.2 Makefile建立
+##### 為使MIPS在實現高階語言編譯、組譯、鏈接到binary乃至到轉換為data文件格式的過程中能更方便快速，讓使用者只需輸入一條指令即可完成上述步驟，這需要使用Makefile來進行所有過程的自動化。
+
+![GNU](https://user-images.githubusercontent.com/66453841/196103223-2a5acf47-4b57-4f88-9c16-afe0132703ae.jpg)
+
+## 4 MIPS於Xilinx VIVADO原生模擬系統
+### 4.1 運用Xilinx VIVADO進行多指令時，指令運行結果的觀察與驗證，驗證RTL Code在設計的過程是否正確。
+![Waveform simulation](https://user-images.githubusercontent.com/66453841/196104979-fd1fa839-80ad-44ea-95ec-d6f7cc2d8628.png)
 
