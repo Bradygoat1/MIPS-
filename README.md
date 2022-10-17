@@ -15,12 +15,21 @@
 | Instruction Implemented Type   | Arithmetic, Data transfer, Logic, Conditional branch, Unconditional branch | 
 | Data forwarding                | Forwarding / Stall+forwarding |  
 
-### 2.2 MIPS指令格式
-
+### 2.2 MIPS指令格式與類別
+#####                                              
+                                                    表1 MIPS指令格式
 ![MIPS指令格式](https://user-images.githubusercontent.com/66453841/196083067-147c56e3-6bf8-4ea4-9ddc-be272cb9191e.jpg)
+#####                                              
+                                                   表2 常見的MIPS指令
+![常見的mips指令](https://user-images.githubusercontent.com/66453841/196115502-82770165-31d3-4e8a-8bac-c77b52770951.jpg)
 
-### 2.3 MIPS指令Control Signal
+### 2.3 MIPS五種定址法
 
+
+
+### 2.4 MIPS指令Control Signal
+#####
+                                                  表3 常見指令的控制信號
 | Instruction | RegDst | ALUSrc | MemtoReg | RegWrite | MemRead | MemWrite | Branch | ALUOp1 | ALUOp0 | 
 |:-----------:|:-------|:-------|:---------|:---------|:--------|:---------|:-------|:-------|:-------|
 |   R-Type    |    1   |   0    |     0    |     1    |    0    |     0    |    0   |   1    |    0   | 
@@ -28,7 +37,7 @@
 |     sw      |    X   |   1    |     X    |     0    |    0    |     1    |    0   |   0    |    0   | 
 |     beq     |    X   |   0    |     X    |     0    |    0    |     0    |    1   |   0    |    1   | 
 
-### 2.4 MIPS資料路徑與管線化
+### 2.5 MIPS資料路徑與管線化
 ##### 此CPU擁有標準的五級管線，其運行的Datapath and Control如圖1所示，但在多指令運行時，因無管線化緣故，使在多指令運行時效率不佳，故須修改電路使其達到管線化，各Stage間新增Pipeline ，在理想運行狀態時，可同時重疊執行五個指令，使CPU在多個指令運行時效率可以提升，並運用Hazard Detection Unit抓取指令類別與其使用的暫存器類型來偵測危障類型來對症下藥，更有效的解決管線中的資料(load-use data hazard)、控制危障問題，具有危障偵測單元與前饋單元的管線路徑圖如圖2所示。
 ##### -
 
@@ -43,15 +52,17 @@
 
 ## 3 MIPS編譯環境的建立
 ### 3.1 MIPS GNU Toolchain
-##### 為了使MIPS處理機與MIPS32指令級架構兼容，故須在Ubuntu GNU/LINUX作業系統的環境下安裝使用GNU開發工具鏈，使MIPS能實現從高階語言透過compiler、assembler、linker來得到binary文件也就是指令對應的二進制32bit指令格式，最後進行格式轉換，得到inst_rom.data文件格式，來提供給MIPS的inst_rom，進而讓處理機進行指令提取、解碼等後續階段運算與儲存。
+##### 為了使MIPS處理機與MIPS32指令級架構兼容，故須在Ubuntu GNU/LINUX作業系統的環境下安裝使用GNU開發工具鏈(圖3)，使MIPS能實現從高階語言透過compiler、assembler、linker來得到binary文件也就是指令對應的二進制32bit指令格式，最後進行格式轉換，得到inst_rom.data文件格式，來提供給MIPS的inst_rom，進而讓處理機進行指令提取、解碼等後續階段運算與儲存。
 
 ### 3.2 Makefile建立
 ##### 為使MIPS在實現高階語言編譯、組譯、鏈接到binary乃至到轉換為data文件格式的過程中能更方便快速，讓使用者只需輸入一條指令即可完成上述步驟，這需要使用Makefile來進行所有過程的自動化。
-
+                                           圖3 於Ubuntu GNU/LINUX作業系統環境架設GNU自動化工具鏈
 ![GNU](https://user-images.githubusercontent.com/66453841/196103223-2a5acf47-4b57-4f88-9c16-afe0132703ae.jpg)
 
 ## 4 MIPS於Xilinx VIVADO原生模擬系統
-### 4.1 運用Xilinx VIVADO進行多指令時，指令運行結果的觀察與驗證，驗證RTL Code在設計的過程是否正確。
+### 4.1 運用Xilinx VIVADO進行多指令運算，透過圖4所示的WAVEFORM，觀察與驗證指令運行結果是否符合預期，驗證RTL Code在設計的過程是否正確。
+#####
+                                           圖4 運用Xilinx VIVADO原生模擬系統進行指令於管線運行的觀察與驗證
 ![Waveform simulation](https://user-images.githubusercontent.com/66453841/196104979-fd1fa839-80ad-44ea-95ec-d6f7cc2d8628.png)
 
 ## 5 Reference
